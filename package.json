@@ -38,9 +38,9 @@
     "cy:run": "cypress run",
     "cy:run:record": "cypress run --record",
     "cy:open": "cypress open",
-    "local:open": "start-test 8080 cy:open",
-    "local:run": "start-test 8080 cy:run",
-    "local:run:record": "start-test 8080 cy:run:record",
+    "local:open": "start-test 65098 cy:open",
+    "local:run": "start-test 65098 cy:run",
+    "local:run:record": "start-test 65098 cy:run:record",
     "ci:set-port": "node ./scripts/set-port",
     "semantic-release": "semantic-release"
   },
