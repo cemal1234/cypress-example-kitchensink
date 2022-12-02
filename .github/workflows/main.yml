@@ -11,7 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          working-directory: C:/Users/200551/cypress-example-kitchensink/package-lock.json
+          working-directory: /home/runner/work/cypress-example-kitchensink/cypress-example-kitchensink/package-lock.json
           build: npm run build
           start: npm start
           browser: electron
