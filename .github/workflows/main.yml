@@ -8,15 +8,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install dependencies
-        uses: cypress-io/github-action@v2.3.6
+      - name: Cypress install
+        uses: cypress-io/github-action@v4
         with:
-          runTests: false  
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
+          runTests: false
       - name: Cypress run
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
+          install: false
+          working-directory: cypress/e2e
           build: npm run build
           start: npm start
           browser: electron
