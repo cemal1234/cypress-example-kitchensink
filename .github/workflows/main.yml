@@ -8,14 +8,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Cypress install
-        uses: cypress-io/github-action@v4
-        with:
-          runTests: false
       - name: Cypress run
         uses: cypress-io/github-action@v4 # use the explicit version number
         with:
-          install: false
           working-directory: cypress/e2e
           build: npm run build
           start: npm start
